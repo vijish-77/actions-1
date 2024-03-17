@@ -1,0 +1,20 @@
+name: genrate ascii
+on: push 
+jobs:
+    ascii_job:
+        runs-on: ubuntu-latest
+        steps:
+            - name: checkout Repo
+              uses: actions/checkout@v4
+
+            - name: list and readfile
+              run: |
+                echo "My first github actions job"
+                ls -ltr
+     
+            
+            - name: Executing shell script
+              run: |
+                chmod +x asci-script.sh
+                ./asci-script.sh
+
