@@ -13,7 +13,9 @@ jobs:
           uses: ls -ltra
         
         - name: Execute Shell Script
-          run: ./asci-script.sh
+          run: |
+            chmod +x asci-script.s
+            ./asci-script.sh
 
         
 
