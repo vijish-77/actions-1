@@ -11,6 +11,7 @@ jobs:
               run: |
                 echo "My first github actions job"
                 ls -ltr
+                pwd
      
             
             - name: Executing shell script
